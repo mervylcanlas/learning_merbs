@@ -1,0 +1,21 @@
+<div class = "show">
+    <div class = "title">
+        <span><h2><%= @article.title %></h2></span>
+        <span>
+            <span>
+                <%= link_to "Edit", edit_article_path(@article) %>
+            </span>
+            <span>
+                /
+            </span>
+            <span>
+                <%= link_to "Delete", article_path(@article),
+                                method: :delete,
+                                data: { confirm: "Are you sure?" } %>
+            </span>
+        </span>
+    </div>
+    <div class = "body">
+        <p><%= @article.body %></p>
+    </div>
+<div>

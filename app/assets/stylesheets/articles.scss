@@ -1,0 +1,19 @@
+.articles {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    width: 700px;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .article {
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+        border: 1px solid cyan;
+        border-radius: 10px;
+    }
+}

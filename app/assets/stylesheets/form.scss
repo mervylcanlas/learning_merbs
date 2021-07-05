@@ -1,0 +1,44 @@
+form {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    input[type=submit] {
+        margin-top: 10px;
+        padding: 7px;
+        background: none;
+        color: inherit;
+        border: 1px solid rgb(0, 192, 0);
+        border-radius: 5px;
+        color: rgb(0, 192, 0);
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+    input[type=text] {
+        background-color: black;
+        width: 100%;
+        border: none;
+        padding: 10px;
+        color: white;
+    }
+    textarea {
+        background-color: black;
+        width: 100%;
+        border: none;
+        padding: 10px;
+        color: white;
+    }
+    span {
+        margin-bottom: 15px;
+    }
+    .err_msg {
+        color: red;
+        font-style: italic;
+        text-align: right;
+    }
+}

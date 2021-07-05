@@ -1,0 +1,25 @@
+<%= form_with model: article do |form| %>
+    <span>
+      <%= form.label :title %>
+    </span>
+    <span>
+      <%= form.text_field :title %>
+    </span>
+    <% article.errors.full_messages_for(:title).each do |message| %>
+      <span class = "err_msg"><%= message %></span>
+    <% end %>
+
+    <span>
+      <%= form.label :body %>
+    </span>
+    <span>
+      <%= form.text_area :body, rows: 10, placeholder: "Must be atleast 16 characters long" %>
+    </span>
+    <% article.errors.full_messages_for(:body).each do |message| %>
+      <span class = "err_msg">*<%= message %></span>
+    <% end %>
+
+    <span>
+      <%= form.submit "Post" %>
+    <span>
+<% end %>

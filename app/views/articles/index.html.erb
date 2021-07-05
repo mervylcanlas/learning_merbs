@@ -1,0 +1,6 @@
+<div class = "articles">
+    <% @articles.each do |article| %>
+        <%= link_to article.title, article, class: "article" %>
+    <% end %>
+</div>
+

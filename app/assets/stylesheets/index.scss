@@ -1,0 +1,22 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+$maincolor: rgb(30,30,30);
+$mainfont: 'Roboto', sans-serif;
+$mainfontcolor: rgb(105,191,234);
+
+body {
+    background-color: $maincolor;
+    font-family: $mainfont;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .header, .articles, .new, .show {
+        width: 90vw;
+    }
+    form {
+        width: 70%;
+    }
+}
